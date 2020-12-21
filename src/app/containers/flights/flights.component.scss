@@ -1,0 +1,25 @@
+@import "src/assets/variables";
+:host{
+  padding-right: 10px;
+  padding-left: 10px;
+  display: block;
+  ::ng-deep app-table#flight-list{
+    .data-cell{
+      width: calc(100% / 5 );
+      display: block;
+    }
+    .table-header{
+      color: #bbbabf;
+      border-bottom: 0.5px solid #bbbabf;
+      .data-cell{
+        justify-content: center;
+      }
+    }
+    .data-row{
+      border-bottom: 0.5px solid $hover-gray;
+      &:hover:not(.table-header){
+        background: $hover-gray2;
+      }
+    }
+  }
+}

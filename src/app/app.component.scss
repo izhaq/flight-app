@@ -1,0 +1,21 @@
+:host{
+  width: 100%;
+  height: 100%;
+  display: block;
+  .app-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    .flight-container{
+      border-left: 0.5px solid black;
+      border-right: 0.5px solid black;
+    }
+    .workers-container{
+      border-left: 0.5px solid black;
+    }
+    .details-container{
+      border-right: 0.5px solid black;
+    }
+  }
+}
+

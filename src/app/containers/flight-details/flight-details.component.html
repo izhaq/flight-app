@@ -1,0 +1,22 @@
+<div class="flight-information">
+  <div class="detail">
+    <span class="detail-label">Time until next refresh</span>
+    <span class="detail-value">{{refreshRate | async}}</span>
+  </div>
+  <div class="detail">
+    <span class="detail-label">Plane Number</span>
+    <span class="detail-value">{{flightInfo.plane}}</span>
+  </div>
+  <div class="detail">
+    <span class="detail-label">Duration</span>
+    <span class="detail-value">{{flightInfo.duration | minutesToHours}}</span>
+  </div>
+  <div class="detail">
+    <span class="detail-label">Origin Gate</span>
+    <span class="detail-value">{{flightInfo.from_gate}}</span>
+  </div>
+  <div class="detail">
+    <span class="detail-label">Destination Gate</span>
+    <span class="detail-value">{{flightInfo.to_gate}}</span>
+  </div>
+</div>
